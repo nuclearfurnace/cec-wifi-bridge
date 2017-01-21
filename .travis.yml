@@ -1,0 +1,5 @@
+language: python # we need python to run our checks
+install:
+  - git clone https://github.com/nuclearfurnace/ecad-tooling.git
+script:
+  - ecad-tooling/checks/run-schematic-design-checks.py projects/cec-wifi-bridge/cec-wifi-bridge-rev-a.sch
