@@ -518,6 +518,85 @@
 </package>
 </packages>
 </library>
+<library name="espressif">
+<packages>
+<package name="ESP8266EX">
+<smd name="EXT_RSTB" x="-1.75" y="2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="RES12K" x="-1.25" y="2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="VDDA$2" x="-0.75" y="2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="VDDD" x="-0.25" y="2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="XTAL_IN" x="0.25" y="2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="XTAL_OUT" x="0.75" y="2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="U0TXD" x="1.25" y="2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="U0RXD" x="1.75" y="2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="GND" x="0" y="0" dx="3.45" dy="3.45" layer="1"/>
+<smd name="MTMS" x="-1.75" y="-2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="MTDI" x="-1.25" y="-2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="VDDPST" x="-0.75" y="-2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="MTCK" x="-0.25" y="-2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="MTDO" x="0.25" y="-2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="GPIO2" x="0.75" y="-2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="GPIO0" x="1.25" y="-2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="GPIO4" x="1.75" y="-2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="XPD_DCDC" x="-2.4" y="-1.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="CHIP_EN" x="-2.4" y="-1.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="TOUT" x="-2.4" y="-0.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="VDD_RTC" x="-2.4" y="-0.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="VDD3P3$2" x="-2.4" y="0.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="VDD3P3" x="-2.4" y="0.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="LNA" x="-2.4" y="1.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="VDDA" x="-2.4" y="1.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="VDDPST$2" x="2.4" y="-1.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="SD_DATA_2" x="2.4" y="-1.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="SD_DATA_3" x="2.4" y="-0.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="SD_CMD" x="2.4" y="-0.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="SD_CLK" x="2.4" y="0.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="SD_DATA_0" x="2.4" y="0.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="SD_DATA_1" x="2.4" y="1.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="GPOIO5" x="2.4" y="1.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<pad name="P$1" x="-1" y="1" drill="0.3302" diameter="0.6096"/>
+<pad name="P$2" x="0" y="1" drill="0.3302" diameter="0.6096"/>
+<pad name="P$3" x="1" y="1" drill="0.3302" diameter="0.6096"/>
+<pad name="P$4" x="1" y="0" drill="0.3302" diameter="0.6096"/>
+<pad name="P$5" x="0" y="0" drill="0.3302" diameter="0.6096"/>
+<pad name="P$6" x="-1" y="0" drill="0.3302" diameter="0.6096"/>
+<pad name="P$7" x="-1" y="-1" drill="0.3302" diameter="0.6096"/>
+<pad name="P$8" x="0" y="-1" drill="0.3302" diameter="0.6096"/>
+<pad name="P$9" x="1" y="-1" drill="0.3302" diameter="0.6096"/>
+<wire x1="-3.302" y1="3.302" x2="3.302" y2="3.302" width="0.127" layer="21"/>
+<wire x1="3.302" y1="3.302" x2="3.302" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="3.302" y1="-3.302" x2="-3.302" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="-3.302" y1="-3.302" x2="-3.302" y2="3.302" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-3.302" y="1.778"/>
+<vertex x="-1.778" y="3.302"/>
+<vertex x="-3.302" y="3.302"/>
+</polygon>
+<text x="-3.302" y="3.81" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-3.302" y="5.334" size="1.27" layer="25">&gt;NAME</text>
+</package>
+</packages>
+</library>
+<library name="crystals">
+<packages>
+<package name="EPSON-TSX-3225">
+<smd name="P$1" x="-1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="P$2" x="1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="P$3" x="1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="P$4" x="-1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
+<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-2.286" y1="1.778" x2="2.286" y2="1.778" width="0.127" layer="21"/>
+<wire x1="2.286" y1="1.778" x2="2.286" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="2.286" y1="-1.778" x2="-2.286" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="-2.286" y1="-1.778" x2="-2.286" y2="1.778" width="0.127" layer="21"/>
+<text x="-2.286" y="2.54" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-2.286" y="4.318" size="1.27" layer="25">&gt;NAME</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -724,6 +803,10 @@ design rules under a new name.</description>
 <element name="R4" library="passives" package="R0805" value="820" x="-38.1" y="20.32"/>
 <element name="U1" library="microchip" package="5-SOT23" value="MCP73831/2/OT" x="-38.1" y="12.7"/>
 <element name="U2" library="texas-instruments" package="S-PVSON-N10-DRC" value="TPS61200DRC" x="-22.86" y="12.7"/>
+<element name="U3" library="espressif" package="ESP8266EX" value="ESP8266EX" x="-45.72" y="3.81"/>
+<element name="X1" library="crystals" package="EPSON-TSX-3225" value="26MHz" x="-54.61" y="2.54"/>
+<element name="C6" library="passives" package="C0402" value="14pF" x="-55.88" y="-5.08"/>
+<element name="C7" library="passives" package="C0402" value="14pF" x="-55.88" y="-10.16"/>
 </elements>
 <signals>
 <signal name="N$1">
@@ -779,6 +862,16 @@ design rules under a new name.</description>
 <contactref element="C2" pad="2"/>
 <contactref element="J1" pad="P$5"/>
 <contactref element="J2" pad="2"/>
+<contactref element="C6" pad="2"/>
+<contactref element="C7" pad="1"/>
+<contactref element="X1" pad="P$2"/>
+<contactref element="X1" pad="P$4"/>
+<contactref element="U3" pad="GND"/>
+<wire x1="-55.4" y1="-5.08" x2="-56.36" y2="-10.16" width="0" layer="19" extent="1-1"/>
+<wire x1="-53.51" y1="1.74" x2="-55.4" y2="-5.08" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.71" y1="3.34" x2="-53.51" y2="1.74" width="0" layer="19" extent="1-1"/>
+<wire x1="-45.72" y1="3.81" x2="-53.51" y2="1.74" width="0" layer="19" extent="1-1"/>
+<wire x1="-38.1" y1="11.3" x2="-45.72" y2="3.81" width="0" layer="19" extent="1-1"/>
 <wire x1="-32.12" y1="20.32" x2="-38.1" y2="11.3" width="0" layer="19" extent="1-1"/>
 <wire x1="-27.04" y1="20.32" x2="-32.12" y2="20.32" width="0" layer="19" extent="1-1"/>
 <wire x1="-31.27" y1="26.67" x2="-32.12" y2="20.32" width="0" layer="19" extent="1-1"/>
@@ -837,6 +930,20 @@ design rules under a new name.</description>
 <contactref element="L1" pad="P$1"/>
 <contactref element="U2" pad="P$3"/>
 <wire x1="-17.185" y1="20.32" x2="-22.86" y2="11.225" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$11">
+<contactref element="U3" pad="XTAL_IN"/>
+<contactref element="X1" pad="P$3"/>
+<contactref element="C6" pad="1"/>
+<wire x1="-53.51" y1="3.34" x2="-56.36" y2="-5.08" width="0" layer="19" extent="1-1"/>
+<wire x1="-45.47" y1="6.21" x2="-53.51" y2="3.34" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$12">
+<contactref element="U3" pad="XTAL_OUT"/>
+<contactref element="X1" pad="P$1"/>
+<contactref element="C7" pad="2"/>
+<wire x1="-55.71" y1="1.74" x2="-55.4" y2="-10.16" width="0" layer="19" extent="1-1"/>
+<wire x1="-44.97" y1="6.21" x2="-55.71" y2="1.74" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

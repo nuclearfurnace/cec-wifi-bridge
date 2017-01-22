@@ -1314,6 +1314,271 @@ WITH 1.3-A SWITCHES&lt;/strong&gt;</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="espressif">
+<packages>
+<package name="ESP8266EX">
+<smd name="EXT_RSTB" x="-1.75" y="2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="RES12K" x="-1.25" y="2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="VDDA$2" x="-0.75" y="2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="VDDD" x="-0.25" y="2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="XTAL_IN" x="0.25" y="2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="XTAL_OUT" x="0.75" y="2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="U0TXD" x="1.25" y="2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="U0RXD" x="1.75" y="2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="GND" x="0" y="0" dx="3.45" dy="3.45" layer="1"/>
+<smd name="MTMS" x="-1.75" y="-2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="MTDI" x="-1.25" y="-2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="VDDPST" x="-0.75" y="-2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="MTCK" x="-0.25" y="-2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="MTDO" x="0.25" y="-2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="GPIO2" x="0.75" y="-2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="GPIO0" x="1.25" y="-2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="GPIO4" x="1.75" y="-2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="XPD_DCDC" x="-2.4" y="-1.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="CHIP_EN" x="-2.4" y="-1.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="TOUT" x="-2.4" y="-0.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="VDD_RTC" x="-2.4" y="-0.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="VDD3P3$2" x="-2.4" y="0.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="VDD3P3" x="-2.4" y="0.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="LNA" x="-2.4" y="1.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="VDDA" x="-2.4" y="1.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="VDDPST$2" x="2.4" y="-1.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="SD_DATA_2" x="2.4" y="-1.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="SD_DATA_3" x="2.4" y="-0.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="SD_CMD" x="2.4" y="-0.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="SD_CLK" x="2.4" y="0.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="SD_DATA_0" x="2.4" y="0.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="SD_DATA_1" x="2.4" y="1.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="GPOIO5" x="2.4" y="1.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<pad name="P$1" x="-1" y="1" drill="0.3302" diameter="0.6096"/>
+<pad name="P$2" x="0" y="1" drill="0.3302" diameter="0.6096"/>
+<pad name="P$3" x="1" y="1" drill="0.3302" diameter="0.6096"/>
+<pad name="P$4" x="1" y="0" drill="0.3302" diameter="0.6096"/>
+<pad name="P$5" x="0" y="0" drill="0.3302" diameter="0.6096"/>
+<pad name="P$6" x="-1" y="0" drill="0.3302" diameter="0.6096"/>
+<pad name="P$7" x="-1" y="-1" drill="0.3302" diameter="0.6096"/>
+<pad name="P$8" x="0" y="-1" drill="0.3302" diameter="0.6096"/>
+<pad name="P$9" x="1" y="-1" drill="0.3302" diameter="0.6096"/>
+<wire x1="-3.302" y1="3.302" x2="3.302" y2="3.302" width="0.127" layer="21"/>
+<wire x1="3.302" y1="3.302" x2="3.302" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="3.302" y1="-3.302" x2="-3.302" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="-3.302" y1="-3.302" x2="-3.302" y2="3.302" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-3.302" y="1.778"/>
+<vertex x="-1.778" y="3.302"/>
+<vertex x="-3.302" y="3.302"/>
+</polygon>
+<text x="-3.302" y="3.81" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-3.302" y="5.334" size="1.27" layer="25">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="ESP8266EX">
+<pin name="VDDA" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<pin name="LNA" x="34.29" y="-27.94" visible="pin" length="short" rot="R180"/>
+<pin name="VDD3P3" x="-2.54" y="-10.16" visible="pin" length="short"/>
+<pin name="VDD_RTC" x="-2.54" y="-12.7" visible="pin" length="short"/>
+<pin name="TOUT" x="34.29" y="-22.86" visible="pin" length="short" rot="R180"/>
+<pin name="CHIP_EN" x="-2.54" y="-22.86" visible="pin" length="short"/>
+<pin name="XPD_DCDC" x="-2.54" y="-27.94" visible="pin" length="short"/>
+<pin name="MTMS" x="-2.54" y="-48.26" visible="pin" length="short"/>
+<pin name="MTDI" x="-2.54" y="-45.72" visible="pin" length="short"/>
+<pin name="VDDPST" x="-2.54" y="-7.62" visible="pin" length="short"/>
+<pin name="MTCK" x="-2.54" y="-43.18" visible="pin" length="short"/>
+<pin name="MTDO" x="-2.54" y="-40.64" visible="pin" length="short"/>
+<pin name="GPIO2" x="34.29" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="GPIO0" x="34.29" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="GPIO4" x="34.29" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="SD_DATA_2" x="34.29" y="-50.8" visible="pin" length="short" rot="R180"/>
+<pin name="SD_DATA_3" x="34.29" y="-53.34" visible="pin" length="short" rot="R180"/>
+<pin name="SD_CMD" x="34.29" y="-43.18" visible="pin" length="short" rot="R180"/>
+<pin name="SD_CLK" x="34.29" y="-40.64" visible="pin" length="short" rot="R180"/>
+<pin name="SD_DATA_0" x="34.29" y="-45.72" visible="pin" length="short" rot="R180"/>
+<pin name="SD_DATA_1" x="34.29" y="-48.26" visible="pin" length="short" rot="R180"/>
+<pin name="GPIO5" x="34.29" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="U0RXD" x="34.29" y="-33.02" visible="pin" length="short" rot="R180"/>
+<pin name="U0TXD" x="34.29" y="-35.56" visible="pin" length="short" rot="R180"/>
+<pin name="XTAL_OUT" x="34.29" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="XTAL_IN" x="34.29" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="VDDD" x="-2.54" y="-5.08" visible="pin" length="short"/>
+<pin name="RES12K" x="-2.54" y="-25.4" visible="pin" length="short"/>
+<pin name="EXT_RSTB" x="-2.54" y="-30.48" visible="pin" length="short"/>
+<pin name="GND" x="-2.54" y="-53.34" visible="pin" length="short"/>
+<wire x1="0" y1="0" x2="0" y2="-55.88" width="0.254" layer="94"/>
+<wire x1="0" y1="-55.88" x2="31.75" y2="-55.88" width="0.254" layer="94"/>
+<wire x1="31.75" y1="-55.88" x2="31.75" y2="0" width="0.254" layer="94"/>
+<wire x1="31.75" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="2.54" size="2.54" layer="96">&gt;VALUE</text>
+<text x="0" y="6.35" size="2.54" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ESP8266EX" prefix="U">
+<gates>
+<gate name="G$1" symbol="ESP8266EX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ESP8266EX">
+<connects>
+<connect gate="G$1" pin="CHIP_EN" pad="CHIP_EN"/>
+<connect gate="G$1" pin="EXT_RSTB" pad="EXT_RSTB"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GPIO0" pad="GPIO0"/>
+<connect gate="G$1" pin="GPIO2" pad="GPIO2"/>
+<connect gate="G$1" pin="GPIO4" pad="GPIO4"/>
+<connect gate="G$1" pin="GPIO5" pad="GPOIO5"/>
+<connect gate="G$1" pin="LNA" pad="LNA"/>
+<connect gate="G$1" pin="MTCK" pad="MTCK"/>
+<connect gate="G$1" pin="MTDI" pad="MTDI"/>
+<connect gate="G$1" pin="MTDO" pad="MTDO"/>
+<connect gate="G$1" pin="MTMS" pad="MTMS"/>
+<connect gate="G$1" pin="RES12K" pad="RES12K"/>
+<connect gate="G$1" pin="SD_CLK" pad="SD_CLK"/>
+<connect gate="G$1" pin="SD_CMD" pad="SD_CMD"/>
+<connect gate="G$1" pin="SD_DATA_0" pad="SD_DATA_0"/>
+<connect gate="G$1" pin="SD_DATA_1" pad="SD_DATA_1"/>
+<connect gate="G$1" pin="SD_DATA_2" pad="SD_DATA_2"/>
+<connect gate="G$1" pin="SD_DATA_3" pad="SD_DATA_3"/>
+<connect gate="G$1" pin="TOUT" pad="TOUT"/>
+<connect gate="G$1" pin="U0RXD" pad="U0RXD"/>
+<connect gate="G$1" pin="U0TXD" pad="U0TXD"/>
+<connect gate="G$1" pin="VDD3P3" pad="VDD3P3 VDD3P3$2"/>
+<connect gate="G$1" pin="VDDA" pad="VDDA VDDA$2"/>
+<connect gate="G$1" pin="VDDD" pad="VDDD"/>
+<connect gate="G$1" pin="VDDPST" pad="VDDPST VDDPST$2"/>
+<connect gate="G$1" pin="VDD_RTC" pad="VDD_RTC"/>
+<connect gate="G$1" pin="XPD_DCDC" pad="XPD_DCDC"/>
+<connect gate="G$1" pin="XTAL_IN" pad="XTAL_IN"/>
+<connect gate="G$1" pin="XTAL_OUT" pad="XTAL_OUT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="crystals">
+<packages>
+<package name="ABM8G">
+<smd name="1" x="-1.1" y="-0.85" dx="1.4" dy="1.2" layer="1"/>
+<smd name="2" x="1.1" y="-0.85" dx="1.4" dy="1.2" layer="1"/>
+<smd name="3" x="1.1" y="0.85" dx="1.4" dy="1.2" layer="1"/>
+<smd name="4" x="-1.1" y="0.85" dx="1.4" dy="1.2" layer="1"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="1.05" x2="1.4" y2="1.05" width="0.127" layer="51"/>
+<wire x1="1.4" y1="-1.05" x2="-1.4" y2="-1.05" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="-1.05" x2="-1.4" y2="1.05" width="0.127" layer="51"/>
+<wire x1="1.4" y1="1.05" x2="1.4" y2="-1.05" width="0.127" layer="51"/>
+<wire x1="-2.3" y1="1.9" x2="-2.3" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="-1.9" x2="2.3" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="2.3" y1="-1.9" x2="2.3" y2="1.9" width="0.127" layer="21"/>
+<wire x1="2.3" y1="1.9" x2="-2.3" y2="1.9" width="0.127" layer="21"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="2.286" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="ABM9">
+<smd name="1" x="-1.5" y="-0.85" dx="1.397" dy="1.1938" layer="1"/>
+<smd name="2" x="1.5" y="-0.85" dx="1.397" dy="1.1938" layer="1"/>
+<smd name="3" x="1.5" y="0.85" dx="1.397" dy="1.1938" layer="1"/>
+<smd name="4" x="-1.5" y="0.85" dx="1.397" dy="1.1938" layer="1"/>
+<wire x1="2" y1="1.25" x2="2" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="2" y1="-1.25" x2="-2" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-2" y1="-1.25" x2="-2" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-2" y1="1.25" x2="2" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-1.8" y1="1.05" x2="1.8" y2="1.05" width="0.127" layer="51"/>
+<wire x1="1.8" y1="-1.05" x2="-1.8" y2="-1.05" width="0.127" layer="51"/>
+<wire x1="-1.8" y1="-1.05" x2="-1.8" y2="1.05" width="0.127" layer="51"/>
+<wire x1="1.8" y1="1.05" x2="1.8" y2="-1.05" width="0.127" layer="51"/>
+<wire x1="-2.6" y1="1.9" x2="-2.6" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-1.9" x2="2.6" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="2.6" y1="-1.9" x2="2.6" y2="1.9" width="0.127" layer="21"/>
+<wire x1="2.6" y1="1.9" x2="-2.6" y2="1.9" width="0.127" layer="21"/>
+<text x="-2.6" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.6" y="2.286" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="EPSON-TSX-3225">
+<smd name="P$1" x="-1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="P$2" x="1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="P$3" x="1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="P$4" x="-1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
+<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-2.286" y1="1.778" x2="2.286" y2="1.778" width="0.127" layer="21"/>
+<wire x1="2.286" y1="1.778" x2="2.286" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="2.286" y1="-1.778" x2="-2.286" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="-2.286" y1="-1.778" x2="-2.286" y2="1.778" width="0.127" layer="21"/>
+<text x="-2.286" y="2.54" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-2.286" y="4.318" size="1.27" layer="25">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="Q-GROUNDED">
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.27" x2="-0.381" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0.381" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.27" x2="0.381" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.27" x2="-0.381" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.524" x2="1.016" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.524" x2="-1.016" y2="-1.524" width="0.254" layer="94"/>
+<text x="-2.54" y="4.826" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
+<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<pin name="GND" x="0" y="-2.54" visible="off" length="point" direction="pas" rot="R90"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GROUNDED-CRYSTAL" prefix="X">
+<gates>
+<gate name="G$1" symbol="Q-GROUNDED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-ABM8G" package="ABM8G">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-ABM9" package="ABM9">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-EPSON-TSX-3225" package="EPSON-TSX-3225">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$3"/>
+<connect gate="G$1" pin="GND" pad="P$2 P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1356,6 +1621,12 @@ WITH 1.3-A SWITCHES&lt;/strong&gt;</description>
 <part name="L1" library="passives" deviceset="INDUCTOR-HORIZONTAL" device="-XPL2010" value="2.2uH"/>
 <part name="J2" library="pin-headers" deviceset="PINHD-1X2" device=""/>
 <part name="SHEET2" library="frames" deviceset="A4L-NODOC" device=""/>
+<part name="U3" library="espressif" deviceset="ESP8266EX" device=""/>
+<part name="X1" library="crystals" deviceset="GROUNDED-CRYSTAL" device="-EPSON-TSX-3225" value="26MHz"/>
+<part name="C6" library="passives" deviceset="CAPACITOR" device="-0402" value="14pF"/>
+<part name="C7" library="passives" deviceset="CAPACITOR" device="-0402" value="14pF"/>
+<part name="AGND13" library="supplies" deviceset="AGND" device=""/>
+<part name="AGND14" library="supplies" deviceset="AGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1598,10 +1869,64 @@ you to use a TV's USB port, which may not provide power when the TV is off.</tex
 </plain>
 <instances>
 <instance part="SHEET2" gate="G$1" x="0" y="0"/>
+<instance part="U3" gate="G$1" x="86.36" y="116.84"/>
+<instance part="X1" gate="G$1" x="152.4" y="114.3"/>
+<instance part="C6" gate="G$1" x="160.02" y="109.22"/>
+<instance part="C7" gate="G$1" x="144.78" y="106.68" rot="R180"/>
+<instance part="AGND13" gate="VR1" x="152.4" y="97.79"/>
+<instance part="AGND14" gate="VR1" x="78.74" y="54.61"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="AGND" class="0">
+<segment>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="104.14" x2="144.78" y2="102.87" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="102.87" x2="152.4" y2="102.87" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="102.87" x2="160.02" y2="102.87" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="102.87" x2="160.02" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="AGND13" gate="VR1" pin="AGND"/>
+<wire x1="152.4" y1="100.33" x2="152.4" y2="102.87" width="0.1524" layer="91"/>
+<junction x="152.4" y="102.87"/>
+<pinref part="X1" gate="G$1" pin="GND"/>
+<wire x1="152.4" y1="111.76" x2="152.4" y2="102.87" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="GND"/>
+<pinref part="AGND14" gate="VR1" pin="AGND"/>
+<wire x1="83.82" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="63.5" x2="78.74" y2="57.15" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="XTAL_IN"/>
+<wire x1="120.65" y1="114.3" x2="130.81" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="130.81" y1="114.3" x2="130.81" y2="123.19" width="0.1524" layer="91"/>
+<wire x1="130.81" y1="123.19" x2="160.02" y2="123.19" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="123.19" x2="160.02" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="114.3" x2="154.94" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="111.76" x2="160.02" y2="114.3" width="0.1524" layer="91"/>
+<junction x="160.02" y="114.3"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="XTAL_OUT"/>
+<wire x1="120.65" y1="111.76" x2="133.35" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="133.35" y1="111.76" x2="133.35" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="1"/>
+<wire x1="133.35" y1="114.3" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="114.3" x2="149.86" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="111.76" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
+<junction x="144.78" y="114.3"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
