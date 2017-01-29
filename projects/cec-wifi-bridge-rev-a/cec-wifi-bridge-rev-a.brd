@@ -34,8 +34,8 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -1300,6 +1300,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="J2" library="pin-headers" package="1X02" value="" x="30.226" y="5.461" smashed="yes" rot="R270">
 <attribute name="VALUE" x="27.051" y="8.001" size="1.27" layer="27" rot="R270"/>
+<attribute name="BOM" value="EXCLUDE" x="30.226" y="5.461" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="L1" library="passives" package="COILCRAFT-XPL2010" value="2.2uH" x="21.082" y="11.049" smashed="yes" rot="R180">
 <attribute name="NAME" x="24.384" y="12.319" size="1.27" layer="25" rot="R180"/>
@@ -1352,7 +1353,9 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U4" library="flash" package="SOIC-8" value="SPI-FLASH-SOIC8" x="34.925" y="22.479" smashed="yes" rot="R90">
 <attribute name="NAME" x="30.734" y="25.908" size="1.27" layer="25"/>
 </element>
-<element name="ANT1" library="antenna" package="DN007+0" value="INVERTED_F_ANTENNA+0" x="69.85" y="20.193" rot="R270"/>
+<element name="ANT1" library="antenna" package="DN007+0" value="INVERTED_F_ANTENNA+0" x="69.85" y="20.193" rot="R270">
+<attribute name="BOM" value="EXCLUDE" x="69.85" y="20.193" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 <element name="C8" library="passives" package="C0402" value="5.6pF" x="65.786" y="17.907" smashed="yes">
 <attribute name="NAME" x="67.056" y="17.399" size="1.27" layer="25"/>
 </element>
@@ -2088,7 +2091,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="44.906" y1="7.057" x2="51.106" y2="7.057" width="0.1524" layer="1"/>
 <wire x1="50.828" y1="13.208" x2="50.828" y2="7.335" width="0.1524" layer="1"/>
 <wire x1="50.828" y1="7.335" x2="51.106" y2="7.057" width="0.254" layer="1"/>
-<wire x1="45.72" y1="20.828" x2="50.673" y2="15.875" width="0.1524" layer="16"/>
+<wire x1="45.707" y1="20.841" x2="50.673" y2="15.875" width="0.1524" layer="16"/>
 <wire x1="50.673" y1="15.875" x2="50.673" y2="14.351" width="0.1524" layer="16"/>
 <via x="50.673" y="14.351" extent="1-16" drill="0.254"/>
 <via x="45.707" y="20.841" extent="1-16" drill="0.254"/>
@@ -2097,7 +2100,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="50.673" y1="14.351" x2="50.673" y2="13.363" width="0.1524" layer="1"/>
 <wire x1="50.673" y1="13.363" x2="50.828" y2="13.208" width="0.1524" layer="1"/>
 <wire x1="45.707" y1="20.841" x2="45.184" y2="20.841" width="0.1524" layer="1"/>
-<wire x1="45.72" y1="20.828" x2="45.707" y2="20.841" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="TDO">
 <contactref element="U3" pad="MTDO"/>
@@ -2244,6 +2246,14 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$23">
 <contactref element="U4" pad="P$2"/>
+<contactref element="U3" pad="SD_DATA_0"/>
+<wire x1="37.325" y1="21.844" x2="35.941" y2="21.844" width="0.1524" layer="1"/>
+<via x="35.941" y="21.844" extent="1-16" drill="0.254"/>
+<wire x1="35.941" y1="21.844" x2="39.116" y2="21.844" width="0.1524" layer="16"/>
+<wire x1="39.116" y1="21.844" x2="39.751" y2="22.479" width="0.1524" layer="16"/>
+<via x="39.751" y="22.479" extent="1-16" drill="0.254"/>
+<wire x1="39.751" y1="22.479" x2="41.022" y2="22.479" width="0.1524" layer="1"/>
+<wire x1="41.022" y1="22.479" x2="41.034" y2="22.491" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$24">
 <contactref element="U3" pad="SD_DATA_3"/>
