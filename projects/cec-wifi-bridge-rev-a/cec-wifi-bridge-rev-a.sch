@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4969,16 +4969,36 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="SHEET1" library="frames" deviceset="A4L-NODOC" device="">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
-<part name="U1" library="microchip" deviceset="MCP73831/2" device="/OT"/>
-<part name="U2" library="texas-instruments" deviceset="TPS6120" device="0DRC"/>
-<part name="C1" library="passives" deviceset="CAPACITOR" device="-0603" value="4.7uF"/>
-<part name="R1" library="passives" deviceset="RESISTOR" device="-0402" value="2K"/>
-<part name="R2" library="passives" deviceset="RESISTOR" device="-0402" value="2M"/>
-<part name="R3" library="passives" deviceset="RESISTOR" device="-0402" value="198K"/>
-<part name="C2" library="passives" deviceset="CAPACITOR" device="-0402" value="0.1uF"/>
-<part name="C3" library="passives" deviceset="CAPACITOR" device="-0805" value="10uF"/>
-<part name="C4" library="passives" deviceset="CAPACITOR" device="-0402" value="0.1uF"/>
-<part name="C5" library="passives" deviceset="CAPACITOR" device="-0805" value="22uF"/>
+<part name="U1" library="microchip" deviceset="MCP73831/2" device="/OT">
+<attribute name="PN" value="MCP73831T-2ACI/OT"/>
+</part>
+<part name="U2" library="texas-instruments" deviceset="TPS6120" device="0DRC">
+<attribute name="PN" value="TPS61200DRCR"/>
+</part>
+<part name="C1" library="passives" deviceset="CAPACITOR" device="-0603" value="4.7uF">
+<attribute name="PN" value="GRM188R61A475KE15D"/>
+</part>
+<part name="R1" library="passives" deviceset="RESISTOR" device="-0402" value="2K">
+<attribute name="PN" value="RC0402FR-072KL"/>
+</part>
+<part name="R2" library="passives" deviceset="RESISTOR" device="-0402" value="2M">
+<attribute name="PN" value="RC0402FR-072ML"/>
+</part>
+<part name="R3" library="passives" deviceset="RESISTOR" device="-0402" value="196K">
+<attribute name="PN" value="RC0402FR-07196KL"/>
+</part>
+<part name="C2" library="passives" deviceset="CAPACITOR" device="-0402" value="0.1uF">
+<attribute name="PN" value="GRM155R71H104KE14D"/>
+</part>
+<part name="C3" library="passives" deviceset="CAPACITOR" device="-0805" value="10uF">
+<attribute name="PN" value="GRM21BR61A106KE19L"/>
+</part>
+<part name="C4" library="passives" deviceset="CAPACITOR" device="-0402" value="0.1uF">
+<attribute name="PN" value="GRM155R71H104KE14D"/>
+</part>
+<part name="C5" library="passives" deviceset="CAPACITOR" device="-0805" value="22uF">
+<attribute name="PN" value="GRM21BR61A226ME51L"/>
+</part>
 <part name="+3V1" library="supplies" deviceset="+3V3" device=""/>
 <part name="AGND1" library="supplies" deviceset="AGND" device=""/>
 <part name="AGND2" library="supplies" deviceset="AGND" device=""/>
@@ -4993,9 +5013,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="D1" library="dialight" deviceset="DIALIGHT-598-MICROSMD" device="-0603" value="2V, 4mA">
 <attribute name="PN" value="598-8020-107F"/>
 </part>
-<part name="R4" library="passives" deviceset="RESISTOR-HORIZONTAL" device="-0805" value="330"/>
+<part name="R4" library="passives" deviceset="RESISTOR-HORIZONTAL" device="-0805" value="330">
+<attribute name="PN" value="RC0805FR-07330RL"/>
+</part>
 <part name="AGND11" library="supplies" deviceset="AGND" device=""/>
-<part name="J1" library="jae" deviceset="DX4R005H91R1500" device=""/>
+<part name="J1" library="jae" deviceset="DX4R005H91R1500" device="">
+<attribute name="PN" value="DX4R005H91R1500"/>
+</part>
 <part name="AGND12" library="supplies" deviceset="AGND" device=""/>
 <part name="L1" library="passives" deviceset="INDUCTOR-HORIZONTAL" device="-XPL2010" value="2.2uH"/>
 <part name="J2" library="pin-headers" deviceset="PINHD-1X2" device="">
@@ -5005,28 +5029,48 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
 <part name="U3" library="espressif" deviceset="ESP8266EX" device=""/>
-<part name="X1" library="crystals" deviceset="GROUNDED-CRYSTAL" device="-EPSON-TSX-3225" value="26MHz"/>
-<part name="C6" library="passives" deviceset="CAPACITOR" device="-0402" value="14pF"/>
-<part name="C7" library="passives" deviceset="CAPACITOR" device="-0402" value="14pF"/>
+<part name="X1" library="crystals" deviceset="GROUNDED-CRYSTAL" device="-EPSON-TSX-3225" value="26MHz">
+<attribute name="PN" value="TSX-3225 26.0000MF09Z-AC3"/>
+</part>
+<part name="C6" library="passives" deviceset="CAPACITOR" device="-0402" value="14pF">
+<attribute name="PN" value="GJM1555C1H140GB01D"/>
+</part>
+<part name="C7" library="passives" deviceset="CAPACITOR" device="-0402" value="14pF">
+<attribute name="PN" value="GJM1555C1H140GB01D"/>
+</part>
 <part name="AGND13" library="supplies" deviceset="AGND" device=""/>
 <part name="AGND14" library="supplies" deviceset="AGND" device=""/>
-<part name="R5" library="passives" deviceset="RESISTOR-HORIZONTAL" device="-0402" value="12K"/>
+<part name="R5" library="passives" deviceset="RESISTOR-HORIZONTAL" device="-0402" value="12K">
+<attribute name="PN" value="RC0402FR-0712KL"/>
+</part>
 <part name="AGND15" library="supplies" deviceset="AGND" device=""/>
 <part name="+3V2" library="supplies" deviceset="+3V3" device=""/>
-<part name="R6" library="passives" deviceset="RESISTOR" device="-0402" value="10K"/>
+<part name="R6" library="passives" deviceset="RESISTOR" device="-0402" value="10K">
+<attribute name="PN" value="RC0402FR-0710KL"/>
+</part>
 <part name="+3V3" library="supplies" deviceset="+3V3" device=""/>
-<part name="S1" library="switches" deviceset="MOMENTARY" device="-ALPS-SKQG" value="RESET"/>
-<part name="R7" library="passives" deviceset="RESISTOR" device="-0402" value="10K"/>
-<part name="S2" library="switches" deviceset="MOMENTARY" device="-ALPS-SKQG" value="UPLOAD"/>
+<part name="S1" library="switches" deviceset="MOMENTARY" device="-ALPS-SKQG" value="RESET">
+<attribute name="PN" value="SKQGAKE010"/>
+</part>
+<part name="R7" library="passives" deviceset="RESISTOR" device="-0402" value="10K">
+<attribute name="PN" value="RC0402FR-0710KL"/>
+</part>
+<part name="S2" library="switches" deviceset="MOMENTARY" device="-ALPS-SKQG" value="UPLOAD">
+<attribute name="PN" value="SKQGAKE010"/>
+</part>
 <part name="AGND17" library="supplies" deviceset="AGND" device=""/>
-<part name="U4" library="flash" deviceset="SPI-FLASH" device="-SOIC8"/>
+<part name="U4" library="flash" deviceset="SPI-FLASH" device="-SOIC8">
+<attribute name="PN" value="S25FL116K0XMFI041"/>
+</part>
 <part name="AGND18" library="supplies" deviceset="AGND" device=""/>
 <part name="+3V4" library="supplies" deviceset="+3V3" device=""/>
 <part name="ANT1" library="antenna" deviceset="INVERTED_F_ANTENNA" device="+0">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
 <part name="AGND19" library="supplies" deviceset="AGND" device=""/>
-<part name="C8" library="passives" deviceset="CAPACITOR-HORIZONTAL" device="-0402" value="5.6pF"/>
+<part name="C8" library="passives" deviceset="CAPACITOR-HORIZONTAL" device="-0402" value="5.6pF">
+<attribute name="PN" value="GJM1555C1H5R6WB01D"/>
+</part>
 <part name="C9" library="passives" deviceset="CAPACITOR" device="-0402" value="0.1uF">
 <attribute name="PN" value="GRM155R71H104KE14D"/>
 </part>
@@ -5050,11 +5094,15 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </part>
 <part name="+3V5" library="supplies" deviceset="+3V3" device=""/>
 <part name="AGND20" library="supplies" deviceset="AGND" device=""/>
-<part name="J3" library="pin-headers" deviceset="PINHD-2X4" device="" value="DEBUG"/>
+<part name="J3" library="pin-headers" deviceset="PINHD-2X4" device="" value="DEBUG">
+<attribute name="PN" value="M20-9760446"/>
+</part>
 <part name="SHEET3" library="frames" deviceset="A4L-NODOC" device="">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
-<part name="J5" library="pin-headers" deviceset="PINHD-1X5" device="" value="PROGRAM"/>
+<part name="J5" library="pin-headers" deviceset="PINHD-1X5" device="" value="PROGRAM">
+<attribute name="PN" value="M20-9990546"/>
+</part>
 <part name="C16" library="passives" deviceset="CAPACITOR" device="-0402" value="0.1uF">
 <attribute name="PN" value="GRM155R71H104KE14D"/>
 </part>
@@ -5068,19 +5116,35 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
 <part name="T1" library="transistors" deviceset="BJT-NPN" device="-SC-70" value="MMBT3904">
-<attribute name="PN" value="MMBT3904WT1G"/>
+<attribute name="PN" value="MMBT3904LT1G"/>
 </part>
 <part name="T2" library="transistors" deviceset="BJT-NPN" device="-SC-70" value="MMBT3904">
-<attribute name="PN" value="MMBT3904WT1G"/>
+<attribute name="PN" value="MMBT3904LT1G"/>
 </part>
-<part name="R8" library="passives" deviceset="RESISTOR" device="-0402" value="220"/>
-<part name="R9" library="passives" deviceset="RESISTOR" device="-0402" value="470K"/>
-<part name="R10" library="passives" deviceset="RESISTOR" device="-0402" value="47K"/>
-<part name="R11" library="passives" deviceset="RESISTOR" device="-0402" value="220"/>
-<part name="R12" library="passives" deviceset="RESISTOR" device="-0402" value="100K"/>
-<part name="R13" library="passives" deviceset="RESISTOR-HORIZONTAL" device="-0402" value="27K"/>
-<part name="R14" library="passives" deviceset="RESISTOR-HORIZONTAL" device="-0402" value="1M"/>
-<part name="R15" library="passives" deviceset="RESISTOR-HORIZONTAL" device="-0402" value="47K"/>
+<part name="R8" library="passives" deviceset="RESISTOR" device="-0402" value="220">
+<attribute name="PN" value="RC0402FR-07220RL"/>
+</part>
+<part name="R9" library="passives" deviceset="RESISTOR" device="-0402" value="470K">
+<attribute name="PN" value="RC0402FR-07470KL"/>
+</part>
+<part name="R10" library="passives" deviceset="RESISTOR" device="-0402" value="47K">
+<attribute name="PN" value="RC0402FR-0747KL"/>
+</part>
+<part name="R11" library="passives" deviceset="RESISTOR" device="-0402" value="220">
+<attribute name="PN" value="RC0402FR-07220RL"/>
+</part>
+<part name="R12" library="passives" deviceset="RESISTOR" device="-0402" value="100K">
+<attribute name="PN" value="RC0402FR-07100KL"/>
+</part>
+<part name="R13" library="passives" deviceset="RESISTOR-HORIZONTAL" device="-0402" value="27K">
+<attribute name="PN" value="RC0402FR-0727KL"/>
+</part>
+<part name="R14" library="passives" deviceset="RESISTOR-HORIZONTAL" device="-0402" value="1M">
+<attribute name="PN" value="RC0402FR-071ML"/>
+</part>
+<part name="R15" library="passives" deviceset="RESISTOR-HORIZONTAL" device="-0402" value="47K">
+<attribute name="PN" value="RC0402FR-0747KL"/>
+</part>
 <part name="D2" library="diodes" deviceset="DIODE-" device="SOD123" value="1N4148">
 <attribute name="PN" value="1N4148W-7-F"/>
 </part>
@@ -5089,7 +5153,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="AGND24" library="supplies" deviceset="AGND" device=""/>
 <part name="AGND25" library="supplies" deviceset="AGND" device=""/>
 <part name="AGND26" library="supplies" deviceset="AGND" device=""/>
-<part name="C17" library="passives" deviceset="CAPACITOR" device="-0402" value="27pF"/>
+<part name="C17" library="passives" deviceset="CAPACITOR" device="-0402" value="27pF">
+<attribute name="PN" value="GRM1555C1H270GA01D"/>
+</part>
 <part name="C18" library="passives" deviceset="CAPACITOR" device="-0402" value="0.1uF">
 <attribute name="PN" value="GRM155R71H104KE14D"/>
 </part>
@@ -5117,16 +5183,36 @@ you to use a TV's USB port, which may not provide power when the TV is off.</tex
 <instance part="SHEET1" gate="G$1" x="0" y="0">
 <attribute name="BOM" x="0" y="0" size="5.08" layer="96" display="off"/>
 </instance>
-<instance part="U1" gate="G$1" x="71.12" y="102.87"/>
-<instance part="U2" gate="G$1" x="180.34" y="102.87"/>
-<instance part="C1" gate="G$1" x="106.68" y="90.17"/>
-<instance part="R1" gate="G$1" x="95.25" y="88.9"/>
-<instance part="R2" gate="G$1" x="160.02" y="93.98"/>
-<instance part="R3" gate="G$1" x="160.02" y="80.01"/>
-<instance part="C2" gate="G$1" x="147.32" y="80.01"/>
-<instance part="C3" gate="G$1" x="133.35" y="90.17"/>
-<instance part="C4" gate="G$1" x="223.52" y="87.63"/>
-<instance part="C5" gate="G$1" x="238.76" y="87.63"/>
+<instance part="U1" gate="G$1" x="71.12" y="102.87">
+<attribute name="PN" x="71.12" y="102.87" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U2" gate="G$1" x="180.34" y="102.87">
+<attribute name="PN" x="180.34" y="102.87" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C1" gate="G$1" x="106.68" y="90.17">
+<attribute name="PN" x="106.68" y="90.17" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R1" gate="G$1" x="95.25" y="88.9">
+<attribute name="PN" x="95.25" y="88.9" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R2" gate="G$1" x="160.02" y="93.98">
+<attribute name="PN" x="160.02" y="93.98" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R3" gate="G$1" x="160.02" y="80.01">
+<attribute name="PN" x="160.02" y="80.01" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C2" gate="G$1" x="147.32" y="80.01">
+<attribute name="PN" x="147.32" y="80.01" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C3" gate="G$1" x="133.35" y="90.17">
+<attribute name="PN" x="133.35" y="90.17" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C4" gate="G$1" x="223.52" y="87.63">
+<attribute name="PN" x="223.52" y="87.63" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C5" gate="G$1" x="238.76" y="87.63">
+<attribute name="PN" x="238.76" y="87.63" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="+3V1" gate="G$1" x="238.76" y="115.57"/>
 <instance part="AGND1" gate="VR1" x="64.77" y="68.58"/>
 <instance part="AGND2" gate="VR1" x="173.99" y="68.58"/>
@@ -5141,7 +5227,9 @@ you to use a TV's USB port, which may not provide power when the TV is off.</tex
 <instance part="D1" gate="G$1" x="48.26" y="97.79">
 <attribute name="PN" x="48.26" y="97.79" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R4" gate="G$1" x="58.42" y="97.79"/>
+<instance part="R4" gate="G$1" x="58.42" y="97.79">
+<attribute name="PN" x="58.42" y="97.79" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="AGND12" gate="VR1" x="121.92" y="68.58"/>
 <instance part="L1" gate="G$1" x="190.5" y="118.11"/>
 <instance part="J2" gate="G$1" x="144.78" y="110.49">
@@ -5446,21 +5534,39 @@ you to use a TV's USB port, which may not provide power when the TV is off.</tex
 <attribute name="BOM" x="0" y="0" size="5.08" layer="96" display="off"/>
 </instance>
 <instance part="U3" gate="G$1" x="86.36" y="99.06"/>
-<instance part="X1" gate="G$1" x="198.12" y="121.92"/>
-<instance part="C6" gate="G$1" x="205.74" y="116.84"/>
-<instance part="C7" gate="G$1" x="190.5" y="114.3" rot="R180"/>
+<instance part="X1" gate="G$1" x="198.12" y="121.92">
+<attribute name="PN" x="198.12" y="121.92" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C6" gate="G$1" x="205.74" y="116.84">
+<attribute name="PN" x="205.74" y="116.84" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C7" gate="G$1" x="190.5" y="114.3" rot="R180">
+<attribute name="PN" x="190.5" y="114.3" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="AGND13" gate="VR1" x="198.12" y="105.41"/>
 <instance part="AGND14" gate="VR1" x="78.74" y="24.13"/>
-<instance part="R5" gate="G$1" x="59.69" y="73.66"/>
+<instance part="R5" gate="G$1" x="59.69" y="73.66">
+<attribute name="PN" x="59.69" y="73.66" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="AGND15" gate="VR1" x="50.8" y="24.13"/>
 <instance part="+3V2" gate="G$1" x="78.74" y="116.84"/>
-<instance part="R6" gate="G$1" x="125.73" y="104.14"/>
+<instance part="R6" gate="G$1" x="125.73" y="104.14">
+<attribute name="PN" x="125.73" y="104.14" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="+3V3" gate="G$1" x="125.73" y="116.84"/>
-<instance part="S1" gate="G$1" x="59.69" y="85.09"/>
-<instance part="R7" gate="G$1" x="68.58" y="102.87"/>
-<instance part="S2" gate="G$1" x="156.21" y="88.9"/>
+<instance part="S1" gate="G$1" x="59.69" y="85.09">
+<attribute name="PN" x="59.69" y="85.09" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R7" gate="G$1" x="68.58" y="102.87">
+<attribute name="PN" x="68.58" y="102.87" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="S2" gate="G$1" x="156.21" y="88.9">
+<attribute name="PN" x="156.21" y="88.9" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="AGND17" gate="VR1" x="166.37" y="24.13"/>
-<instance part="U4" gate="G$1" x="195.58" y="48.26"/>
+<instance part="U4" gate="G$1" x="195.58" y="48.26">
+<attribute name="PN" x="195.58" y="48.26" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="AGND18" gate="VR1" x="189.23" y="24.13"/>
 <instance part="+3V4" gate="G$1" x="232.41" y="68.58"/>
 </instances>
@@ -5789,13 +5895,21 @@ We also have the antenna on here, but it's not a connector.  Just a PCB antenna.
 <attribute name="BOM" x="219.71" y="100.33" size="5.08" layer="96" display="off"/>
 </instance>
 <instance part="AGND19" gate="VR1" x="208.28" y="87.63"/>
-<instance part="C8" gate="G$1" x="191.77" y="100.33"/>
-<instance part="J3" gate="A" x="82.55" y="29.21"/>
-<instance part="J5" gate="A" x="196.85" y="31.75"/>
+<instance part="C8" gate="G$1" x="191.77" y="100.33">
+<attribute name="PN" x="191.77" y="100.33" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="J3" gate="A" x="82.55" y="29.21">
+<attribute name="PN" x="82.55" y="29.21" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="J5" gate="A" x="196.85" y="31.75">
+<attribute name="PN" x="196.85" y="31.75" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="AGND16" gate="VR1" x="69.85" y="15.24"/>
 <instance part="AGND21" gate="VR1" x="184.15" y="15.24"/>
 <instance part="AGND11" gate="VR1" x="38.1" y="78.74"/>
-<instance part="J1" gate="G$1" x="21.59" y="101.6"/>
+<instance part="J1" gate="G$1" x="21.59" y="101.6">
+<attribute name="PN" x="21.59" y="101.6" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="J4" gate="G$1" x="91.44" y="109.22">
 <attribute name="PN" x="91.44" y="109.22" size="2.54" layer="96" display="off"/>
 </instance>
@@ -5956,14 +6070,30 @@ for an easy software-based implementation.</text>
 <instance part="T2" gate="G$1" x="151.13" y="78.74">
 <attribute name="PN" x="151.13" y="78.74" size="2.54" layer="96" display="off"/>
 </instance>
-<instance part="R8" gate="G$1" x="105.41" y="52.07"/>
-<instance part="R9" gate="G$1" x="116.84" y="52.07"/>
-<instance part="R10" gate="G$1" x="139.7" y="52.07"/>
-<instance part="R11" gate="G$1" x="153.67" y="52.07"/>
-<instance part="R12" gate="G$1" x="105.41" y="88.9"/>
-<instance part="R13" gate="G$1" x="128.27" y="97.79"/>
-<instance part="R14" gate="G$1" x="128.27" y="88.9"/>
-<instance part="R15" gate="G$1" x="128.27" y="78.74"/>
+<instance part="R8" gate="G$1" x="105.41" y="52.07">
+<attribute name="PN" x="105.41" y="52.07" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R9" gate="G$1" x="116.84" y="52.07">
+<attribute name="PN" x="116.84" y="52.07" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R10" gate="G$1" x="139.7" y="52.07">
+<attribute name="PN" x="139.7" y="52.07" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R11" gate="G$1" x="153.67" y="52.07">
+<attribute name="PN" x="153.67" y="52.07" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R12" gate="G$1" x="105.41" y="88.9">
+<attribute name="PN" x="105.41" y="88.9" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R13" gate="G$1" x="128.27" y="97.79">
+<attribute name="PN" x="128.27" y="97.79" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R14" gate="G$1" x="128.27" y="88.9">
+<attribute name="PN" x="128.27" y="88.9" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R15" gate="G$1" x="128.27" y="78.74">
+<attribute name="PN" x="128.27" y="78.74" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="D2" gate="G$1" x="140.97" y="97.79">
 <attribute name="PN" x="140.97" y="97.79" size="2.54" layer="96" display="off"/>
 </instance>
@@ -5972,7 +6102,9 @@ for an easy software-based implementation.</text>
 <instance part="AGND24" gate="VR1" x="116.84" y="40.64"/>
 <instance part="AGND25" gate="VR1" x="139.7" y="40.64"/>
 <instance part="AGND26" gate="VR1" x="153.67" y="40.64"/>
-<instance part="C17" gate="G$1" x="139.7" y="85.09"/>
+<instance part="C17" gate="G$1" x="139.7" y="85.09">
+<attribute name="PN" x="139.7" y="85.09" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6095,6 +6227,9 @@ for an easy software-based implementation.</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,142.477,113.161,J2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
