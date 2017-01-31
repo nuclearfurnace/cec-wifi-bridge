@@ -5021,7 +5021,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="PN" value="DX4R005H91R1500"/>
 </part>
 <part name="AGND12" library="supplies" deviceset="AGND" device=""/>
-<part name="L1" library="passives" deviceset="INDUCTOR-HORIZONTAL" device="-XPL2010" value="2.2uH"/>
+<part name="L1" library="passives" deviceset="INDUCTOR-HORIZONTAL" device="-XPL2010" value="2.2uH">
+<attribute name="PN" value="XPL2010-222MLB"/>
+</part>
 <part name="J2" library="pin-headers" deviceset="PINHD-1X2" device="">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
@@ -5231,7 +5233,9 @@ you to use a TV's USB port, which may not provide power when the TV is off.</tex
 <attribute name="PN" x="58.42" y="97.79" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="AGND12" gate="VR1" x="121.92" y="68.58"/>
-<instance part="L1" gate="G$1" x="190.5" y="118.11"/>
+<instance part="L1" gate="G$1" x="190.5" y="118.11">
+<attribute name="PN" x="190.5" y="118.11" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="J2" gate="G$1" x="144.78" y="110.49">
 <attribute name="BOM" x="144.78" y="110.49" size="5.08" layer="96" display="off"/>
 </instance>
