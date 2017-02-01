@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5010,11 +5010,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="AGND8" library="supplies" deviceset="AGND" device=""/>
 <part name="AGND9" library="supplies" deviceset="AGND" device=""/>
 <part name="AGND10" library="supplies" deviceset="AGND" device=""/>
-<part name="D1" library="dialight" deviceset="DIALIGHT-598-MICROSMD" device="-0603" value="2V, 4mA">
+<part name="D1" library="dialight" deviceset="DIALIGHT-598-MICROSMD" device="-0603" value="2V, 5mA">
 <attribute name="PN" value="598-8020-107F"/>
 </part>
-<part name="R4" library="passives" deviceset="RESISTOR-HORIZONTAL" device="-0805" value="330">
-<attribute name="PN" value="RC0805FR-07330RL"/>
+<part name="R4" library="passives" deviceset="RESISTOR-HORIZONTAL" device="-0603" value="330">
+<attribute name="PN" value="RC0603FR-07330RL"/>
 </part>
 <part name="AGND11" library="supplies" deviceset="AGND" device=""/>
 <part name="J1" library="jae" deviceset="DX4R005H91R1500" device="">
@@ -5170,6 +5170,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="U$3" library="fiducials" deviceset="FIDUCIAL" device="-1MM">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
+<part name="R16" library="passives" deviceset="RESISTOR-HORIZONTAL" device="-0603" value="330">
+<attribute name="PN" value="RC0603FR-07330RL"/>
+</part>
+<part name="D3" library="dialight" deviceset="DIALIGHT-598-MICROSMD" device="-0603" value="3.2V, 5mA">
+<attribute name="PN" value="598-8081-107F"/>
+</part>
+<part name="AGND27" library="supplies" deviceset="AGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5185,17 +5192,17 @@ you to use a TV's USB port, which may not provide power when the TV is off.</tex
 <instance part="SHEET1" gate="G$1" x="0" y="0">
 <attribute name="BOM" x="0" y="0" size="5.08" layer="96" display="off"/>
 </instance>
-<instance part="U1" gate="G$1" x="71.12" y="102.87">
-<attribute name="PN" x="71.12" y="102.87" size="1.778" layer="96" display="off"/>
+<instance part="U1" gate="G$1" x="76.2" y="102.87">
+<attribute name="PN" x="76.2" y="102.87" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U2" gate="G$1" x="180.34" y="102.87">
 <attribute name="PN" x="180.34" y="102.87" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C1" gate="G$1" x="106.68" y="90.17">
-<attribute name="PN" x="106.68" y="90.17" size="1.778" layer="96" display="off"/>
+<instance part="C1" gate="G$1" x="111.76" y="90.17">
+<attribute name="PN" x="111.76" y="90.17" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R1" gate="G$1" x="95.25" y="88.9">
-<attribute name="PN" x="95.25" y="88.9" size="1.778" layer="96" display="off"/>
+<instance part="R1" gate="G$1" x="101.6" y="88.9">
+<attribute name="PN" x="101.6" y="88.9" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R2" gate="G$1" x="160.02" y="93.98">
 <attribute name="PN" x="160.02" y="93.98" size="1.778" layer="96" display="off"/>
@@ -5216,13 +5223,13 @@ you to use a TV's USB port, which may not provide power when the TV is off.</tex
 <attribute name="PN" x="238.76" y="87.63" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="+3V1" gate="G$1" x="238.76" y="115.57"/>
-<instance part="AGND1" gate="VR1" x="64.77" y="68.58"/>
+<instance part="AGND1" gate="VR1" x="69.85" y="68.58"/>
 <instance part="AGND2" gate="VR1" x="173.99" y="68.58"/>
 <instance part="AGND3" gate="VR1" x="209.55" y="68.58"/>
 <instance part="AGND4" gate="VR1" x="238.76" y="68.58"/>
 <instance part="AGND5" gate="VR1" x="223.52" y="68.58"/>
-<instance part="AGND6" gate="VR1" x="106.68" y="68.58"/>
-<instance part="AGND7" gate="VR1" x="95.25" y="68.58"/>
+<instance part="AGND6" gate="VR1" x="111.76" y="68.58"/>
+<instance part="AGND7" gate="VR1" x="101.6" y="68.58"/>
 <instance part="AGND8" gate="VR1" x="133.35" y="68.58"/>
 <instance part="AGND9" gate="VR1" x="147.32" y="68.58"/>
 <instance part="AGND10" gate="VR1" x="160.02" y="68.58"/>
@@ -5232,7 +5239,7 @@ you to use a TV's USB port, which may not provide power when the TV is off.</tex
 <instance part="R4" gate="G$1" x="58.42" y="97.79">
 <attribute name="PN" x="58.42" y="97.79" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="AGND12" gate="VR1" x="121.92" y="68.58"/>
+<instance part="AGND12" gate="VR1" x="124.46" y="68.58"/>
 <instance part="L1" gate="G$1" x="190.5" y="118.11">
 <attribute name="PN" x="190.5" y="118.11" size="1.778" layer="96" display="off"/>
 </instance>
@@ -5268,6 +5275,13 @@ you to use a TV's USB port, which may not provide power when the TV is off.</tex
 <instance part="C18" gate="G$1" x="121.92" y="34.29">
 <attribute name="PN" x="121.92" y="34.29" size="2.54" layer="96" display="off"/>
 </instance>
+<instance part="R16" gate="G$1" x="58.42" y="88.9">
+<attribute name="PN" x="58.42" y="88.9" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="D3" gate="G$1" x="45.72" y="88.9" rot="R180">
+<attribute name="PN" x="45.72" y="88.9" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="AGND27" gate="VR1" x="36.83" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -5280,8 +5294,8 @@ you to use a TV's USB port, which may not provide power when the TV is off.</tex
 <pinref part="U2" gate="G$1" pin="EN"/>
 <wire x1="175.26" y1="100.33" x2="160.02" y2="100.33" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="100.33" x2="133.35" y2="100.33" width="0.1524" layer="91"/>
-<wire x1="133.35" y1="100.33" x2="106.68" y2="100.33" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="100.33" x2="91.44" y2="100.33" width="0.1524" layer="91"/>
+<wire x1="133.35" y1="100.33" x2="111.76" y2="100.33" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="100.33" x2="96.52" y2="100.33" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="97.79" x2="175.26" y2="97.79" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="97.79" x2="175.26" y2="100.33" width="0.1524" layer="91"/>
 <junction x="175.26" y="100.33"/>
@@ -5296,8 +5310,8 @@ you to use a TV's USB port, which may not provide power when the TV is off.</tex
 <wire x1="133.35" y1="92.71" x2="133.35" y2="100.33" width="0.1524" layer="91"/>
 <junction x="133.35" y="100.33"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="92.71" x2="106.68" y2="100.33" width="0.1524" layer="91"/>
-<junction x="106.68" y="100.33"/>
+<wire x1="111.76" y1="92.71" x2="111.76" y2="100.33" width="0.1524" layer="91"/>
+<junction x="111.76" y="100.33"/>
 <wire x1="142.24" y1="113.03" x2="133.35" y2="113.03" width="0.1524" layer="91"/>
 <wire x1="133.35" y1="113.03" x2="133.35" y2="100.33" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="2"/>
@@ -5394,18 +5408,18 @@ you to use a TV's USB port, which may not provide power when the TV is off.</tex
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
 <pinref part="AGND1" gate="VR1" pin="AGND"/>
-<wire x1="68.58" y1="92.71" x2="64.77" y2="92.71" width="0.1524" layer="91"/>
-<wire x1="64.77" y1="92.71" x2="64.77" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="92.71" x2="69.85" y2="92.71" width="0.1524" layer="91"/>
+<wire x1="69.85" y1="92.71" x2="69.85" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="AGND7" gate="VR1" pin="AGND"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="95.25" y1="71.12" x2="95.25" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="71.12" x2="101.6" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="AGND6" gate="VR1" pin="AGND"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="71.12" x2="106.68" y2="85.09" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="71.12" x2="111.76" y2="85.09" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="AGND8" gate="VR1" pin="AGND"/>
@@ -5418,8 +5432,8 @@ you to use a TV's USB port, which may not provide power when the TV is off.</tex
 <wire x1="147.32" y1="71.12" x2="147.32" y2="74.93" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="142.24" y1="110.49" x2="121.92" y2="110.49" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="110.49" x2="121.92" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="110.49" x2="124.46" y2="110.49" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="110.49" x2="124.46" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="AGND12" gate="VR1" pin="AGND"/>
 <pinref part="J2" gate="G$1" pin="2"/>
 </segment>
@@ -5466,13 +5480,19 @@ you to use a TV's USB port, which may not provide power when the TV is off.</tex
 <wire x1="160.02" y1="71.12" x2="160.02" y2="74.93" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="D3" gate="G$1" pin="C"/>
+<wire x1="43.18" y1="88.9" x2="36.83" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="36.83" y1="88.9" x2="36.83" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="AGND27" gate="VR1" pin="AGND"/>
+</segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PROG"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="91.44" y1="97.79" x2="95.25" y2="97.79" width="0.1524" layer="91"/>
-<wire x1="95.25" y1="97.79" x2="95.25" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="97.79" x2="101.6" y2="97.79" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="97.79" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -5491,10 +5511,10 @@ you to use a TV's USB port, which may not provide power when the TV is off.</tex
 </net>
 <net name="VBUS" class="0">
 <segment>
-<wire x1="38.1" y1="109.22" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="109.22" x2="63.5" y2="100.33" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="109.22" x2="69.85" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="69.85" y1="109.22" x2="69.85" y2="100.33" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VDD"/>
-<wire x1="63.5" y1="100.33" x2="68.58" y2="100.33" width="0.1524" layer="91"/>
+<wire x1="69.85" y1="100.33" x2="73.66" y2="100.33" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="43.18" y1="97.79" x2="38.1" y2="97.79" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="97.79" x2="38.1" y2="109.22" width="0.1524" layer="91"/>
@@ -5507,7 +5527,12 @@ you to use a TV's USB port, which may not provide power when the TV is off.</tex
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="STAT"/>
-<wire x1="63.5" y1="97.79" x2="68.58" y2="97.79" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="97.79" x2="66.04" y2="97.79" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="97.79" x2="73.66" y2="97.79" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="88.9" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="88.9" x2="66.04" y2="97.79" width="0.1524" layer="91"/>
+<junction x="66.04" y="97.79"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -5524,6 +5549,13 @@ you to use a TV's USB port, which may not provide power when the TV is off.</tex
 <wire x1="207.01" y1="118.11" x2="207.01" y2="100.33" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="L"/>
 <wire x1="207.01" y1="100.33" x2="204.47" y2="100.33" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="D3" gate="G$1" pin="A"/>
+<wire x1="53.34" y1="88.9" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
