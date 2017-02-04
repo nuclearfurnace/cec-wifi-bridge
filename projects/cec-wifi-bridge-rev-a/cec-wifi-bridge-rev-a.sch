@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1210,76 +1210,39 @@ WITH 1.3-A SWITCHES&lt;/strong&gt;</description>
 </library>
 <library name="jae">
 <packages>
-<package name="DX4R005H91R1500">
-<smd name="P$1" x="-1.3" y="4.125" dx="1.35" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$2" x="-0.65" y="4.125" dx="1.35" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$3" x="0" y="4.125" dx="1.35" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$4" x="0.65" y="4.125" dx="1.35" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$5" x="1.3" y="4.125" dx="1.35" dy="0.4" layer="1" rot="R90"/>
-<rectangle x1="-4.825" y1="0.3" x2="-2.125" y2="1.9" layer="1"/>
-<rectangle x1="2.125" y1="0.3" x2="4.825" y2="1.9" layer="1"/>
-<rectangle x1="-4.15" y1="3.05" x2="-1.75" y2="4.65" layer="1"/>
-<rectangle x1="1.75" y1="3.05" x2="4.15" y2="4.65" layer="1"/>
-<wire x1="-3.7" y1="4.5" x2="-3.7" y2="4.25" width="0.127" layer="51"/>
-<wire x1="-3.7" y1="4.25" x2="-3.7" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="-3.7" y1="-0.5" x2="-3.4" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="-3.4" y1="-0.5" x2="-3.2" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="-3.2" y1="-0.5" x2="3.2" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="3.2" y1="-0.5" x2="3.4" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="3.4" y1="-0.5" x2="3.7" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="3.7" y1="-0.5" x2="3.7" y2="4.25" width="0.127" layer="51"/>
-<wire x1="3.7" y1="4.25" x2="3.7" y2="4.5" width="0.127" layer="51"/>
-<wire x1="3.7" y1="4.5" x2="3" y2="4.5" width="0.127" layer="51"/>
-<wire x1="3" y1="4.5" x2="2.25" y2="4.5" width="0.127" layer="51"/>
-<wire x1="2.25" y1="4.5" x2="-2.25" y2="4.5" width="0.127" layer="51"/>
-<wire x1="-2.25" y1="4.5" x2="-3" y2="4.5" width="0.127" layer="51"/>
-<wire x1="-3" y1="4.5" x2="-3.7" y2="4.5" width="0.127" layer="51"/>
-<wire x1="-3.7" y1="-0.5" x2="-4" y2="-0.8" width="0.127" layer="51"/>
-<wire x1="-4" y1="-0.8" x2="-3.7" y2="-0.8" width="0.127" layer="51"/>
-<wire x1="-3.7" y1="-0.8" x2="-3.4" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="3.7" y1="-0.5" x2="4" y2="-0.8" width="0.127" layer="51"/>
-<wire x1="4" y1="-0.8" x2="3.7" y2="-0.8" width="0.127" layer="51"/>
-<wire x1="3.7" y1="-0.8" x2="3.4" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="-3.2" y1="-0.5" x2="-3.2" y2="-0.8" width="0.127" layer="51"/>
-<wire x1="-3.2" y1="-0.8" x2="3.2" y2="-0.8" width="0.127" layer="51"/>
-<wire x1="3.2" y1="-0.8" x2="3.2" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="-3" y1="2" x2="-2" y2="2" width="0.127" layer="51"/>
-<wire x1="-3" y1="2" x2="-3" y2="0.75" width="0.127" layer="51"/>
-<wire x1="-2" y1="2" x2="-2" y2="0.75" width="0.127" layer="51"/>
-<wire x1="2" y1="0.75" x2="2" y2="2" width="0.127" layer="51"/>
-<wire x1="2" y1="2" x2="3" y2="2" width="0.127" layer="51"/>
-<wire x1="3" y1="2" x2="3" y2="0.75" width="0.127" layer="51"/>
-<wire x1="-3" y1="0.75" x2="-2.75" y2="0.75" width="0.127" layer="51"/>
-<wire x1="-2.75" y1="0.75" x2="-2.75" y2="0.5" width="0.127" layer="51"/>
-<wire x1="-2.75" y1="0.5" x2="-2.75" y2="0.25" width="0.127" layer="51"/>
-<wire x1="-2" y1="0.75" x2="-2.25" y2="0.75" width="0.127" layer="51"/>
-<wire x1="-2.25" y1="0.75" x2="-2.25" y2="0.5" width="0.127" layer="51"/>
-<wire x1="-2.25" y1="0.5" x2="-2.25" y2="0.25" width="0.127" layer="51"/>
-<wire x1="2.25" y1="0.5" x2="2.25" y2="0.75" width="0.127" layer="51"/>
-<wire x1="2.25" y1="0.75" x2="2" y2="0.75" width="0.127" layer="51"/>
-<wire x1="2.75" y1="0.5" x2="2.75" y2="0.75" width="0.127" layer="51"/>
-<wire x1="2.75" y1="0.75" x2="3" y2="0.75" width="0.127" layer="51"/>
-<wire x1="-2.75" y1="0.5" x2="-2.25" y2="0.5" width="0.127" layer="51"/>
-<wire x1="-3.7" y1="4.25" x2="-3" y2="4.25" width="0.127" layer="51"/>
-<wire x1="-3" y1="4.25" x2="-3" y2="4.5" width="0.127" layer="51"/>
-<wire x1="3" y1="4.5" x2="3" y2="4.25" width="0.127" layer="51"/>
-<wire x1="3" y1="4.25" x2="3.7" y2="4.25" width="0.127" layer="51"/>
-<wire x1="-2.25" y1="4.5" x2="-2.25" y2="4.25" width="0.127" layer="51"/>
-<wire x1="-2.25" y1="4.25" x2="2.25" y2="4.25" width="0.127" layer="51"/>
-<wire x1="2.25" y1="4.25" x2="2.25" y2="4.5" width="0.127" layer="51"/>
-<text x="-3.75" y="5.25" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-3.75" y="7" size="1.27" layer="25">&gt;NAME</text>
-<wire x1="2.25" y1="0.25" x2="2.25" y2="0.5" width="0.127" layer="51"/>
-<wire x1="2.25" y1="0.5" x2="2.75" y2="0.5" width="0.127" layer="51"/>
-<wire x1="2.75" y1="0.5" x2="2.75" y2="0.25" width="0.127" layer="51"/>
-<rectangle x1="-4.15" y1="3.05" x2="-1.75" y2="4.65" layer="31"/>
-<rectangle x1="1.75" y1="3.05" x2="4.15" y2="4.65" layer="31"/>
-<rectangle x1="-4.825" y1="0.3" x2="-2.125" y2="1.9" layer="31"/>
-<rectangle x1="2.125" y1="0.3" x2="4.825" y2="1.9" layer="31"/>
-<rectangle x1="-4.25" y1="2.95" x2="-1.65" y2="4.75" layer="29"/>
-<rectangle x1="-4.925" y1="0.2" x2="-2.025" y2="2" layer="29"/>
-<rectangle x1="1.65" y1="2.95" x2="4.25" y2="4.75" layer="29"/>
-<rectangle x1="2.025" y1="0.2" x2="4.925" y2="2" layer="29"/>
+<package name="DX4R005HJ5R2000">
+<smd name="CASE_1" x="-2.175" y="0" dx="2.15" dy="1.9" layer="1"/>
+<smd name="CASE_2" x="2.175" y="0" dx="2.15" dy="1.9" layer="1"/>
+<smd name="CASE_3" x="-2.5" y="3" dx="1.2" dy="1.3" layer="1"/>
+<smd name="CASE_4" x="2.5" y="3" dx="1.2" dy="1.3" layer="1"/>
+<smd name="1" x="-1.3" y="2.575" dx="0.4" dy="1.35" layer="1"/>
+<smd name="2" x="-0.65" y="2.575" dx="0.4" dy="1.35" layer="1"/>
+<smd name="3" x="0" y="2.575" dx="0.4" dy="1.35" layer="1"/>
+<smd name="4" x="0.65" y="2.575" dx="0.4" dy="1.35" layer="1"/>
+<smd name="5" x="1.3" y="2.575" dx="0.4" dy="1.35" layer="1"/>
+<wire x1="-3.71" y1="-2.25" x2="3.71" y2="-2.25" width="0.127" layer="51"/>
+<wire x1="-3.71" y1="2.75" x2="-1.778" y2="2.75" width="0.127" layer="51"/>
+<wire x1="-1.778" y1="2.75" x2="-1.778" y2="2.159" width="0.127" layer="51"/>
+<wire x1="-1.778" y1="2.159" x2="1.778" y2="2.159" width="0.127" layer="51"/>
+<wire x1="1.778" y1="2.159" x2="1.778" y2="2.75" width="0.127" layer="51"/>
+<wire x1="1.778" y1="2.75" x2="3.71" y2="2.75" width="0.127" layer="51"/>
+<wire x1="-3.71" y1="-2.25" x2="-3.71" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-3.71" y1="-1.45" x2="-3.71" y2="2.75" width="0.127" layer="51"/>
+<wire x1="3.71" y1="-2.25" x2="3.71" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="3.71" y1="-1.45" x2="3.71" y2="2.75" width="0.127" layer="51"/>
+<wire x1="-3.71" y1="-1.45" x2="3.71" y2="-1.45" width="0.05" layer="51" style="shortdash"/>
+<rectangle x1="-2.8" y1="2.794" x2="-2.2" y2="3.225" layer="51"/>
+<rectangle x1="-1.4" y1="2.2" x2="-1.2" y2="2.75" layer="51"/>
+<rectangle x1="-0.75" y1="2.2" x2="-0.55" y2="2.75" layer="51"/>
+<rectangle x1="-0.1" y1="2.2" x2="0.1" y2="2.75" layer="51"/>
+<rectangle x1="0.55" y1="2.2" x2="0.75" y2="2.75" layer="51"/>
+<rectangle x1="1.2" y1="2.2" x2="1.4" y2="2.75" layer="51"/>
+<rectangle x1="2.2" y1="2.794" x2="2.8" y2="3.225" layer="51"/>
+<wire x1="-4.191" y1="1.27" x2="-4.191" y2="4.191" width="0.254" layer="51"/>
+<wire x1="-4.191" y1="4.191" x2="4.191" y2="4.191" width="0.254" layer="51"/>
+<wire x1="4.191" y1="4.191" x2="4.191" y2="1.27" width="0.254" layer="51"/>
+<text x="-4.318" y="4.826" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-4.318" y="6.604" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -1298,18 +1261,19 @@ WITH 1.3-A SWITCHES&lt;/strong&gt;</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DX4R005H91R1500" prefix="J">
+<deviceset name="DX4R005HJ5R2000" prefix="J">
+<description>&lt;strong&gt;USB Micro-B&lt;/strong&gt;</description>
 <gates>
-<gate name="G$1" symbol="USB-MINI-MICRO" x="5.08" y="-7.62"/>
+<gate name="G$1" symbol="USB-MINI-MICRO" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DX4R005H91R1500">
+<device name="" package="DX4R005HJ5R2000">
 <connects>
-<connect gate="G$1" pin="D+" pad="P$3"/>
-<connect gate="G$1" pin="D-" pad="P$2"/>
-<connect gate="G$1" pin="GND" pad="P$5"/>
-<connect gate="G$1" pin="ID" pad="P$4"/>
-<connect gate="G$1" pin="VBUS" pad="P$1"/>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="2"/>
+<connect gate="G$1" pin="GND" pad="5 CASE_1 CASE_2 CASE_3 CASE_4"/>
+<connect gate="G$1" pin="ID" pad="4"/>
+<connect gate="G$1" pin="VBUS" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5017,8 +4981,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="PN" value="RC0603FR-07330RL"/>
 </part>
 <part name="AGND11" library="supplies" deviceset="AGND" device=""/>
-<part name="J1" library="jae" deviceset="DX4R005H91R1500" device="">
-<attribute name="PN" value="DX4R005H91R1500"/>
+<part name="J1" library="jae" deviceset="DX4R005HJ5R2000" device="">
+<attribute name="PN" value="DX4R005HJ5R2000"/>
 </part>
 <part name="AGND12" library="supplies" deviceset="AGND" device=""/>
 <part name="L1" library="passives" deviceset="INDUCTOR-HORIZONTAL" device="-XPL2010" value="2.2uH">
