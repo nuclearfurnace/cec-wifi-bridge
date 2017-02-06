@@ -1302,6 +1302,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="U3" library="espressif" package="ESP8266EX" value="ESP8266EX" x="43.434" y="26.924" smashed="yes" rot="R180">
 <attribute name="NAME" x="40.005" y="30.48" size="1.27" layer="25" font="vector"/>
+<attribute name="PN" value="ESP8266EX" x="43.434" y="26.924" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="X1" library="crystals" package="EPSON-TSX-3225" value="26MHz" x="42.672" y="18.669" smashed="yes">
 <attribute name="NAME" x="40.386" y="15.24" size="1.27" layer="25" font="vector"/>

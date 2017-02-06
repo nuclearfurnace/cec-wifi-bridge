@@ -4994,7 +4994,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="SHEET2" library="frames" deviceset="A4L-NODOC" device="">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
-<part name="U3" library="espressif" deviceset="ESP8266EX" device=""/>
+<part name="U3" library="espressif" deviceset="ESP8266EX" device="">
+<attribute name="PN" value="ESP8266EX"/>
+</part>
 <part name="X1" library="crystals" deviceset="GROUNDED-CRYSTAL" device="-EPSON-TSX-3225" value="26MHz">
 <attribute name="PN" value="TSX-3225 26.0000MF09Z-AC3"/>
 </part>
@@ -5533,7 +5535,9 @@ you to use a TV's USB port, which may not provide power when the TV is off.</tex
 <instance part="SHEET2" gate="G$1" x="0" y="0">
 <attribute name="BOM" x="0" y="0" size="5.08" layer="96" display="off"/>
 </instance>
-<instance part="U3" gate="G$1" x="86.36" y="99.06"/>
+<instance part="U3" gate="G$1" x="86.36" y="99.06">
+<attribute name="PN" x="86.36" y="99.06" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="X1" gate="G$1" x="198.12" y="121.92">
 <attribute name="PN" x="198.12" y="121.92" size="1.778" layer="96" display="off"/>
 </instance>
