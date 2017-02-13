@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5189,9 +5189,15 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="PN" value="598-8081-107F"/>
 </part>
 <part name="AGND27" library="supplies" deviceset="AGND" device=""/>
-<part name="TP1" library="test" deviceset="TESTPOINT-WITH-GND" device=""/>
-<part name="TP2" library="test" deviceset="TESTPOINT-WITH-GND" device=""/>
-<part name="TP3" library="test" deviceset="TESTPOINT-WITH-GND" device=""/>
+<part name="TP1" library="test" deviceset="TESTPOINT-WITH-GND" device="">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
+<part name="TP2" library="test" deviceset="TESTPOINT-WITH-GND" device="">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
+<part name="TP3" library="test" deviceset="TESTPOINT-WITH-GND" device="">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
 <part name="AGND28" library="supplies" deviceset="AGND" device=""/>
 <part name="+3V7" library="supplies" deviceset="+3V3" device=""/>
 </parts>
@@ -5969,9 +5975,15 @@ We also have the antenna on here, but it's not a connector.  Just a PCB antenna.
 <instance part="U$3" gate="G$1" x="238.76" y="25.4">
 <attribute name="BOM" x="238.76" y="25.4" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="TP1" gate="G$1" x="201.93" y="63.5"/>
-<instance part="TP2" gate="G$1" x="201.93" y="46.99"/>
-<instance part="TP3" gate="G$1" x="201.93" y="30.48"/>
+<instance part="TP1" gate="G$1" x="201.93" y="63.5">
+<attribute name="BOM" x="201.93" y="63.5" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="TP2" gate="G$1" x="201.93" y="46.99">
+<attribute name="BOM" x="201.93" y="46.99" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="TP3" gate="G$1" x="201.93" y="30.48">
+<attribute name="BOM" x="201.93" y="30.48" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="AGND28" gate="VR1" x="191.77" y="16.51"/>
 <instance part="AGND12" gate="VR1" x="132.08" y="55.88"/>
 <instance part="J2" gate="G$1" x="140.97" y="66.04">
@@ -6327,9 +6339,6 @@ for an easy software-based implementation.</text>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="113,1,142.477,113.161,J2,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
