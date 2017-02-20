@@ -5021,7 +5021,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="AGND9" library="supplies" deviceset="AGND" device=""/>
 <part name="AGND10" library="supplies" deviceset="AGND" device=""/>
 <part name="D1" library="dialight" deviceset="DIALIGHT-598-MICROSMD" device="-0603" value="2V, 5mA">
-<attribute name="PN" value="598-8020-107F"/>
+<attribute name="PN" value="APT1608SURCK"/>
 </part>
 <part name="R4" library="passives" deviceset="RESISTOR-HORIZONTAL" device="-0603" value="330">
 <attribute name="PN" value="RC0603FR-07330RL"/>
@@ -5064,13 +5064,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </part>
 <part name="+3V3" library="supplies" deviceset="+3V3" device=""/>
 <part name="S1" library="switches" deviceset="MOMENTARY" device="-ALPS-SKQG" value="RESET">
-<attribute name="PN" value="SKQGAKE010"/>
+<attribute name="PN" value="SKQGADE010"/>
 </part>
 <part name="R7" library="passives" deviceset="RESISTOR" device="-0402" value="10K">
 <attribute name="PN" value="RC0402FR-0710KL"/>
 </part>
 <part name="S2" library="switches" deviceset="MOMENTARY" device="-ALPS-SKQG" value="UPLOAD">
-<attribute name="PN" value="SKQGAKE010"/>
+<attribute name="PN" value="SKQGADE010"/>
 </part>
 <part name="AGND17" library="supplies" deviceset="AGND" device=""/>
 <part name="U4" library="flash" deviceset="SPI-FLASH" device="-SOIC8">
@@ -5151,7 +5151,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="PN" value="RC0402FR-07100KL"/>
 </part>
 <part name="R13" library="passives" deviceset="RESISTOR-HORIZONTAL" device="-0402" value="27K">
-<attribute name="PN" value="RC0402FR-0727KL"/>
+<attribute name="PN" value="ERJ-2RKF2702X"/>
 </part>
 <part name="R14" library="passives" deviceset="RESISTOR-HORIZONTAL" device="-0402" value="1M">
 <attribute name="PN" value="RC0402FR-071ML"/>
@@ -5186,7 +5186,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="PN" value="RC0603FR-07330RL"/>
 </part>
 <part name="D3" library="dialight" deviceset="DIALIGHT-598-MICROSMD" device="-0603" value="3.2V, 5mA">
-<attribute name="PN" value="598-8081-107F"/>
+<attribute name="PN" value="150060GS75000"/>
 </part>
 <part name="AGND27" library="supplies" deviceset="AGND" device=""/>
 <part name="TP1" library="test" deviceset="TESTPOINT-WITH-GND" device="">

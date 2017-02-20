@@ -1281,7 +1281,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="PN" value="GRM21BR61A226ME51L" x="26.416" y="8.382" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="D1" library="dialight" package="DIALIGHT-0603" value="2V, 5mA" x="23.114" y="15.494" smashed="yes">
-<attribute name="PN" value="598-8020-107F" x="23.114" y="15.494" size="1.778" layer="27" display="off"/>
+<attribute name="PN" value="APT1608SURCK" x="23.114" y="15.494" size="1.778" layer="27" display="off"/>
 </element>
 <element name="J1" library="jae" package="DX4R005HJ5R2000" value="DX4R005HJ5R2000" x="1.524" y="6.4008" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.111" y="10.2778" size="1.27" layer="25" font="vector" rot="R270"/>
@@ -1345,7 +1345,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="S1" library="switches" package="ALPS-SKQG" value="RESET" x="48.006" y="5.207" smashed="yes" rot="R180">
 <attribute name="VALUE" x="43.815" y="8.636" size="1.27" layer="25" font="vector" ratio="12"/>
-<attribute name="PN" value="SKQGAKE010" x="48.006" y="5.207" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PN" value="SKQGADE010" x="48.006" y="5.207" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R7" library="passives" package="R0402" value="10K" x="51.308" y="17.145" smashed="yes">
 <attribute name="NAME" x="48.006" y="16.383" size="1.27" layer="25" font="vector"/>
@@ -1353,7 +1353,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="S2" library="switches" package="ALPS-SKQG" value="UPLOAD" x="57.658" y="5.207" smashed="yes">
 <attribute name="VALUE" x="53.594" y="8.636" size="1.27" layer="25" font="vector" ratio="12"/>
-<attribute name="PN" value="SKQGAKE010" x="57.658" y="5.207" size="1.778" layer="27" display="off"/>
+<attribute name="PN" value="SKQGADE010" x="57.658" y="5.207" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U4" library="flash" package="SOIC-8" value="SPI-FLASH-SOIC8" x="34.925" y="26.162" smashed="yes" rot="R90">
 <attribute name="NAME" x="30.734" y="29.464" size="1.27" layer="25" font="vector"/>
@@ -1440,7 +1440,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="R13" library="passives" package="R0402" value="27K" x="25.273" y="24.765" smashed="yes" rot="R90">
 <attribute name="NAME" x="27.432" y="23.876" size="1.27" layer="25" font="vector" rot="R90"/>
-<attribute name="PN" value="RC0402FR-0727KL" x="25.273" y="24.765" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PN" value="ERJ-2RKF2702X" x="25.273" y="24.765" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R14" library="passives" package="R0402" value="1M" x="17.653" y="24.384" smashed="yes" rot="R180">
 <attribute name="NAME" x="16.51" y="25.019" size="1.27" layer="25" font="vector" rot="R180"/>
@@ -1477,7 +1477,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="25.019" y="18.542" size="1.27" layer="27"/>
 </element>
 <element name="D3" library="dialight" package="DIALIGHT-0603" value="3.2V, 5mA" x="23.114" y="17.272" smashed="yes">
-<attribute name="PN" value="598-8081-107F" x="23.114" y="17.272" size="1.778" layer="27" display="off"/>
+<attribute name="PN" value="150060GS75000" x="23.114" y="17.272" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="21.463" y="18.288" size="1.27" layer="27"/>
 </element>
 <element name="TP1" library="test" package="TESTPOINT-1.5-WITH-GND" value="TESTPOINT-WITH-GND" x="9.017" y="3.429" smashed="yes">
