@@ -2758,6 +2758,40 @@ Based on TI Design Note DN007&lt;br&gt;</description>
 <rectangle x1="0.475" y1="0.6" x2="0.825" y2="1.05" layer="25"/>
 <rectangle x1="-0.175" y1="-1.05" x2="0.175" y2="-0.6" layer="25"/>
 </package>
+<package name="SOT-23">
+<smd name="P$1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="P$2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="P$3" x="0" y="1" dx="0.8" dy="0.9" layer="1"/>
+<wire x1="-1.45" y1="0.65" x2="-0.254" y2="0.65" width="0.1" layer="51"/>
+<wire x1="-0.254" y1="0.65" x2="0.254" y2="0.65" width="0.1" layer="51"/>
+<wire x1="0.254" y1="0.65" x2="1.45" y2="0.65" width="0.1" layer="51"/>
+<wire x1="1.45" y1="0.65" x2="1.45" y2="-0.65" width="0.1" layer="51"/>
+<wire x1="1.45" y1="-0.65" x2="1.17" y2="-0.65" width="0.1" layer="51"/>
+<wire x1="1.17" y1="-0.65" x2="0.73" y2="-0.65" width="0.1" layer="51"/>
+<wire x1="0.73" y1="-0.65" x2="-0.73" y2="-0.65" width="0.1" layer="51"/>
+<wire x1="-0.73" y1="-0.65" x2="-1.17" y2="-0.65" width="0.1" layer="51"/>
+<wire x1="-1.17" y1="-0.65" x2="-1.45" y2="-0.65" width="0.1" layer="51"/>
+<wire x1="-1.45" y1="-0.65" x2="-1.45" y2="0.65" width="0.1" layer="51"/>
+<wire x1="-0.254" y1="0.65" x2="-0.254" y2="1.2" width="0.1" layer="51"/>
+<wire x1="-0.254" y1="1.2" x2="0.254" y2="1.2" width="0.1" layer="51"/>
+<wire x1="0.254" y1="1.2" x2="0.254" y2="0.65" width="0.1" layer="51"/>
+<wire x1="-1.17" y1="-0.65" x2="-1.17" y2="-1.2" width="0.1" layer="51"/>
+<wire x1="-1.17" y1="-1.2" x2="-0.73" y2="-1.2" width="0.1" layer="51"/>
+<wire x1="-0.73" y1="-1.2" x2="-0.73" y2="-0.65" width="0.1" layer="51"/>
+<wire x1="0.73" y1="-0.65" x2="0.73" y2="-1.2" width="0.1" layer="51"/>
+<wire x1="0.73" y1="-1.2" x2="1.17" y2="-1.2" width="0.1" layer="51"/>
+<wire x1="1.17" y1="-1.2" x2="1.17" y2="-0.65" width="0.1" layer="51"/>
+<wire x1="-1.778" y1="1.778" x2="1.778" y2="1.778" width="0.1" layer="21"/>
+<wire x1="1.778" y1="1.778" x2="1.778" y2="-1.778" width="0.1" layer="21"/>
+<wire x1="1.778" y1="-1.778" x2="-1.778" y2="-1.778" width="0.1" layer="21"/>
+<wire x1="-1.778" y1="-1.778" x2="-1.778" y2="1.778" width="0.1" layer="21"/>
+<text x="-2.032" y="2.032" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-2.032" y="3.556" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-1.778" y1="1.778" x2="1.778" y2="1.778" width="0.1" layer="39"/>
+<wire x1="-1.778" y1="-1.778" x2="-1.778" y2="1.778" width="0.1" layer="39"/>
+<wire x1="1.778" y1="-1.778" x2="1.778" y2="1.778" width="0.1" layer="39"/>
+<wire x1="-1.778" y1="-1.778" x2="1.778" y2="-1.778" width="0.1" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="NPN">
@@ -2796,6 +2830,16 @@ Based on TI Design Note DN007&lt;br&gt;</description>
 </gates>
 <devices>
 <device name="-SC-70" package="SC-70">
+<connects>
+<connect gate="G$1" pin="B" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$3"/>
+<connect gate="G$1" pin="E" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SOT-23" package="SOT-23">
 <connects>
 <connect gate="G$1" pin="B" pad="P$1"/>
 <connect gate="G$1" pin="C" pad="P$3"/>
@@ -4982,8 +5026,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="U1" library="microchip" deviceset="MCP73831/2" device="/OT">
 <attribute name="PN" value="MCP73831T-2ACI/OT"/>
 </part>
-<part name="U2" library="texas-instruments" deviceset="TPS6120" device="0DRC">
-<attribute name="PN" value="TPS61200DRCR"/>
+<part name="U2" library="texas-instruments" deviceset="TPS6120" device="0DRC" value="TPS61201DRC">
+<attribute name="PN" value="TPS61201DRCR"/>
 </part>
 <part name="C1" library="passives" deviceset="CAPACITOR" device="-0603" value="4.7uF">
 <attribute name="PN" value="GRM188R61A475KE15D"/>
@@ -5023,8 +5067,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="D1" library="dialight" deviceset="DIALIGHT-598-MICROSMD" device="-0603" value="2V, 5mA">
 <attribute name="PN" value="APT1608SURCK"/>
 </part>
-<part name="R4" library="passives" deviceset="RESISTOR-HORIZONTAL" device="-0603" value="330">
-<attribute name="PN" value="RC0603FR-07330RL"/>
+<part name="R4" library="passives" deviceset="RESISTOR-HORIZONTAL" device="-0603" value="680">
+<attribute name="PN" value="RC0603FR-07680RL"/>
 </part>
 <part name="AGND11" library="supplies" deviceset="AGND" device=""/>
 <part name="J1" library="jae" deviceset="DX4R005HJ5R2000" device="">
@@ -5129,10 +5173,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="SHEET4" library="frames" deviceset="A4L-NODOC" device="">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
-<part name="T1" library="transistors" deviceset="BJT-NPN" device="-SC-70" value="MMBT3904">
+<part name="T1" library="transistors" deviceset="BJT-NPN" device="-SOT-23" value="MMBT3904">
 <attribute name="PN" value="MMBT3904LT1G"/>
 </part>
-<part name="T2" library="transistors" deviceset="BJT-NPN" device="-SC-70" value="MMBT3904">
+<part name="T2" library="transistors" deviceset="BJT-NPN" device="-SOT-23" value="MMBT3904">
 <attribute name="PN" value="MMBT3904LT1G"/>
 </part>
 <part name="R8" library="passives" deviceset="RESISTOR" device="-0402" value="220">
@@ -5182,8 +5226,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="U$3" library="fiducials" deviceset="FIDUCIAL" device="-1MM">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
-<part name="R16" library="passives" deviceset="RESISTOR-HORIZONTAL" device="-0603" value="330">
-<attribute name="PN" value="RC0603FR-07330RL"/>
+<part name="R16" library="passives" deviceset="RESISTOR-HORIZONTAL" device="-0603" value="270">
+<attribute name="PN" value="RC0603FR-07270RL"/>
 </part>
 <part name="D3" library="dialight" deviceset="DIALIGHT-598-MICROSMD" device="-0603" value="3.2V, 5mA">
 <attribute name="PN" value="150060GS75000"/>
@@ -5193,9 +5237,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
 <part name="TP2" library="test" deviceset="TESTPOINT-WITH-GND" device="">
-<attribute name="BOM" value="EXCLUDE"/>
-</part>
-<part name="TP3" library="test" deviceset="TESTPOINT-WITH-GND" device="">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
 <part name="AGND28" library="supplies" deviceset="AGND" device=""/>
@@ -5981,9 +6022,6 @@ We also have the antenna on here, but it's not a connector.  Just a PCB antenna.
 <instance part="TP2" gate="G$1" x="201.93" y="46.99">
 <attribute name="BOM" x="201.93" y="46.99" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="TP3" gate="G$1" x="201.93" y="30.48">
-<attribute name="BOM" x="201.93" y="30.48" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="AGND28" gate="VR1" x="191.77" y="16.51"/>
 <instance part="AGND12" gate="VR1" x="132.08" y="55.88"/>
 <instance part="J2" gate="G$1" x="140.97" y="66.04">
@@ -6040,11 +6078,7 @@ We also have the antenna on here, but it's not a connector.  Just a PCB antenna.
 <wire x1="199.39" y1="59.69" x2="191.77" y2="59.69" width="0.1524" layer="91"/>
 <pinref part="AGND28" gate="VR1" pin="AGND"/>
 <wire x1="191.77" y1="59.69" x2="191.77" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="TP3" gate="G$1" pin="G"/>
-<wire x1="191.77" y1="43.18" x2="191.77" y2="26.67" width="0.1524" layer="91"/>
-<wire x1="191.77" y1="26.67" x2="191.77" y2="19.05" width="0.1524" layer="91"/>
-<wire x1="199.39" y1="26.67" x2="191.77" y2="26.67" width="0.1524" layer="91"/>
-<junction x="191.77" y="26.67"/>
+<wire x1="191.77" y1="43.18" x2="191.77" y2="19.05" width="0.1524" layer="91"/>
 <pinref part="TP2" gate="G$1" pin="G"/>
 <wire x1="199.39" y1="43.18" x2="191.77" y2="43.18" width="0.1524" layer="91"/>
 <junction x="191.77" y="43.18"/>
@@ -6149,11 +6183,6 @@ We also have the antenna on here, but it's not a connector.  Just a PCB antenna.
 <wire x1="138.43" y1="68.58" x2="130.81" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="1"/>
 <label x="130.81" y="68.58" size="2.54" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="TP3" gate="G$1" pin="S"/>
-<wire x1="199.39" y1="30.48" x2="185.42" y2="30.48" width="0.1524" layer="91"/>
-<label x="185.42" y="30.48" size="2.54" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
